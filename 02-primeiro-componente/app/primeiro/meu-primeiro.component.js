@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var MeuPrimeiroComponent = (function () {
     function MeuPrimeiroComponent() {
     }
-    MeuPrimeiroComponent = __decorate([
-        core_1.Component({
-            selector: 'meu-primeiro-componente',
-            template: '<h2>Meu primeiro componente Angular 2</h2>'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], MeuPrimeiroComponent);
     return MeuPrimeiroComponent;
 }());
+MeuPrimeiroComponent = __decorate([
+    core_1.Component({
+        selector: 'meu-primeiro-componente',
+        template: '<h2>Meu primeiro componente Angular 2</h2>'
+    }),
+    __metadata("design:paramtypes", [])
+], MeuPrimeiroComponent);
 exports.MeuPrimeiroComponent = MeuPrimeiroComponent;
 //# sourceMappingURL=meu-primeiro.component.js.map

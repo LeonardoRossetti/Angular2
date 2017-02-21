@@ -1,0 +1,42 @@
+<div *ngIf="cursos.length > 0">
+    Lista de cursos
+</div>
+<div *ngIf="cursos.length == 0">
+    Não existem cursos para serem listados
+</div>
+
+<p>Com variável:</p>
+<div *ngIf="mostrarCursos">
+    Lista de cursos
+</div>
+<div *ngIf="!mostrarCursos">
+    Não existem cursos para serem listados
+</div>
+
+<button (click)="onMostrarEsconderCursos()">Mostrar ou esconder cursos</button>
+
+<!--Utilizar o ngIf não é muito perfirmático, pois ele altera o DOM a cada iteração
+    Uma alternativa ao ngIf é o hidden, como podemos ver abaixo:-->
+
+<h5>hidden como alternativa</h5>
+<div [hidden]="!mostrarCursos">
+    Lista de cursos
+</div>
+<div [hidden]="mostrarCursos">
+    Não existem cursos para serem listados
+</div>
+
+<span>-------------------------------------------------------------------------------------------------------------------------------------</span>
+
+<!--É isso que o angular faz por tras dos panos quando fazemos um *ngIf-->
+
+<h3>Outra forma de fazemos um *ngIf</h3>
+
+<template [ngIf]="mostrarCursos">
+    <div>Lista de cursos aqui.</div>
+</template>
+
+<!--Essa é outra forma de escrever o *ngIf-->
+<div template="ngIf mostrarCursos">
+    Lista de cursos aqui.
+</div>

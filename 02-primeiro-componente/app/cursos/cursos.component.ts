@@ -17,7 +17,7 @@ import { CursosService } from './cursos.service';
 })
 export class CursosComponent {
 
-  nomePortal = 'loiane.traning';
+  nomePortal = 'angular.traning';
 
   cursos;
 

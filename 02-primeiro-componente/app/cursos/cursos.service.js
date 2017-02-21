@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var CursosService = (function () {
     function CursosService() {
     }
     CursosService.prototype.getCursos = function () {
         return ['Angular 2', 'Java', 'Ext JS', 'Estrutura de Dados'];
     };
-    CursosService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CursosService);
     return CursosService;
 }());
+CursosService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], CursosService);
 exports.CursosService = CursosService;
 //# sourceMappingURL=cursos.service.js.map

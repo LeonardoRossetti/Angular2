@@ -1,0 +1,5 @@
+<p>Descrição: {{ tarefa.desc }}</p>
+<!--<p>Responsável: {{ tarefa.responsavel.nome }}</p>-->
+<!--<p>Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : ""}}</p>-->
+<!--o Elvis (essa interrogação (?) depois do objeto) é uma forma segura de navegação entre os objetos. O resultado é parecido com o ternário anterior-->
+<p>Responsável: {{ tarefa.responsavel?.usuario?.nome }}</p>

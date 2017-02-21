@@ -1,0 +1,8 @@
+[?25h
+> general@0.0.0 lint C:\Projetos\angular\template-02\Aula\curso-angular2\General
+> tslint "src/**/*.ts"
+
+
+src/app/app.component.ts[13, 5]: comment must start with a space
+
+[?25hLint errors found in the listed files.

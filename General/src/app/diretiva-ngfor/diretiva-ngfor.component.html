@@ -1,0 +1,27 @@
+<h4>Diretiva ngFor</h4>
+
+<ul>
+ <li *ngFor="let item of cursos, let i = index">
+   {{i}} - {{item}}
+ </li>
+</ul>
+
+<span>-------------------------------------------------------------------------------------------------------------------------------------</span>
+
+<!--É isso que o angular faz por tras dos panos quando fazemos um *ngFor-->
+
+<h3>Outra forma de fazemos um *ngFor</h3>
+
+<ul>
+ <li template="ngFor let item of cursos, let i = index">
+   {{i}} - {{item}}
+ </li>
+</ul>
+
+<ul>
+  <template ngFor [ngForOf]="cursos", let-item let-i="index">
+    <li>
+      {{i}} - {{item}}
+    </li>
+ </template>
+</ul>

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 
 import { MeuPrimeiroComponent } from './primeiro/meu-primeiro.component';
-
 import { CursosModule } from './cursos/cursos.module';
 
 @NgModule({
